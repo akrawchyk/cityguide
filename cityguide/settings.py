@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'feincms.module.medialibrary',
 
     'cityguide',
+    'cityguide.pages',
+    'cityguide.users',
 ]
 
 MIDDLEWARE = [
@@ -181,6 +183,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Authentication
 # https://docs.djangoproject.com/en/1.10/topics/auth/
 
+AUTH_USER_MODEL = 'users.User'
 AUTHENTICATION_BACKENDS = (
         # Needed to login by username in Django admin, regardless of `allauth`
         'django.contrib.auth.backends.ModelBackend',
@@ -214,7 +217,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 ACCOUNT_LOGIN_ON_PASSWORD_RESET = True
 ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_USER_DISPLAY = lambda u: u.email if u.is_authenticated() else 'anon'
+ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 
 
 # feincms
@@ -226,6 +229,6 @@ FEINCMS_RICHTEXT_INIT_CONTEXT = {
 FEINCMS_RICHTEXT_INIT_TEMPLATE = 'admin/content/richtext/init_tinymce4.html'
 
 MIGRATION_MODULES = {
-    'page': 'cityguide.migrate.page',
-    'medialibrary': 'cityguide.migrate.medialibrary',
+    'page': 'cityguide.pages.migrate.page',
+    'medialibrary': 'cityguide.pages.migrate.medialibrary',
 }
