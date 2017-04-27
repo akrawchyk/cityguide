@@ -8,6 +8,7 @@
         <nav class="u-flexExpandLeft">
             {% if user.is_authenticated %}
             <span>Welcome, {{ user_display }}</span>
+            {% if user.is_staff %}<a href="{% url 'admin:index' %}">Admin</a>{% endif %}
             <a href="{% url 'account_logout' %}">Sign Out</a>
             {% else %}
             <a class="Button" href="{% url 'account_signup' %}">Sign up</a>
