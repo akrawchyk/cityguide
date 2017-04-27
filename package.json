@@ -13,5 +13,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JulianGindi/cityguide-io.git"
+  },
+  "engines": {
+    "node": "^7.9",
+    "npm": "^4.2"
   }
 }

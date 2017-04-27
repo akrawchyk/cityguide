@@ -61,11 +61,11 @@
             "version": "==16.8"
         },
         "pillow": {
-            "hash": "sha256:d7104fb7fd502ed481fc54ae761d4d9840d83142a5295d722db43c31ac44ccea",
+            "hash": "sha256:469f159fa6804915daaec65cee3f8a8be4d3d59afbdada450f7cef330d0feb39",
             "version": "==4.1.0"
         },
         "psycopg2": {
-            "hash": "sha256:74ee532d6068a1456d5eda254513656c716cdee0a7389c91c094c7ce3500a9c9",
+            "hash": "sha256:4cae3856e9b41a4861ad32fd8a4aabc7669a0b828776bb3ce0ca29333dabf40c",
             "version": "==2.7.1"
         },
         "py": {
