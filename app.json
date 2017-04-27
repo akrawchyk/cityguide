@@ -1,0 +1,22 @@
+{
+  "name": "cityguide-io",
+  "env":{
+    "DJANGO_SETTINGS_MODULE":{
+      "value": "cityguide.settings"
+    },
+    "SECRET_KEY": {
+      "generator": "secret"
+    }
+  },
+  "addons":[
+    "heroku-postgresql:hobby-dev"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/kennethreitz/heroku-buildpack-pipenv.git"
+    }
+  ]
+}
