@@ -3,11 +3,15 @@ from django.contrib.auth.models import AbstractUser
 
 
 class Interest(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=64)
 
 
 class Profile(models.Model):
-    age = models.IntegerField
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    age = models.IntegerField()
     location = models.CharField(max_length=64)
     discretionary_income = models.IntegerField()
     miles_willing_to_travel = models.IntegerField()
@@ -17,7 +21,9 @@ class Profile(models.Model):
 
 
 class User(AbstractUser):
-    profile = models.OneToOneField(
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    profile = models.ForeignKey(
         Profile,
         on_delete=models.CASCADE,
         null=True

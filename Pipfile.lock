@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "73c505b43c817d4af6c1f61b301f32b279f44f74cefd415e946ff708ee92d4c7"
+            "sha256": "014646c4fd7f60a5e71b9918496eaefca7f4ef6e6001937c1097b69d5aff38c9"
         },
         "requires": {},
         "sources": [
@@ -61,11 +61,11 @@
             "version": "==16.8"
         },
         "pillow": {
-            "hash": "sha256:469f159fa6804915daaec65cee3f8a8be4d3d59afbdada450f7cef330d0feb39",
+            "hash": "sha256:d7104fb7fd502ed481fc54ae761d4d9840d83142a5295d722db43c31ac44ccea",
             "version": "==4.1.0"
         },
         "psycopg2": {
-            "hash": "sha256:4cae3856e9b41a4861ad32fd8a4aabc7669a0b828776bb3ce0ca29333dabf40c",
+            "hash": "sha256:74ee532d6068a1456d5eda254513656c716cdee0a7389c91c094c7ce3500a9c9",
             "version": "==2.7.1"
         },
         "py": {
@@ -115,6 +115,10 @@
         "sqlparse": {
             "hash": "sha256:740a023ef38ce11bbb99a9d143856f56ef4ec5b0d7a853f58c02c65b035114c4",
             "version": "==0.2.3"
+        },
+        "waitress": {
+            "hash": "sha256:d00e6c533c0fba6b3cbc7f1f1fcf037c84ee47b3065ce20c2c2d55e3eaf3b063",
+            "version": "==1.0.2"
         },
         "whitenoise": {
             "hash": "sha256:1d62a003a0ab747de96da45c831cbb512dcb7f69c1ef0bd20b1cd4ae45d8a0c4",

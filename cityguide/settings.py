@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'cityguide',
     'cityguide.pages',
     'cityguide.users',
+    'cityguide.events',
 ]
 
 MIDDLEWARE = [
