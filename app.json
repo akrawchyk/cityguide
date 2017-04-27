@@ -16,7 +16,7 @@
       "url": "heroku/nodejs"
     },
     {
-      "url": "https://github.com/kennethreitz/heroku-buildpack-pipenv.git"
+      "url": "heroku/python"
     }
   ]
 }

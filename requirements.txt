@@ -1,0 +1,12 @@
+django-allauth==0.31.0
+python-decouple==3.0
+whitenoise==3.3.0
+django-debug-toolbar==1.7
+dj-database-url==0.4.2
+psycopg2==2.7.1
+django-mptt==0.8.7
+feedparser==5.2.1
+django==1.11
+feincms==1.13.1
+pillow==4.1.0
+pytest-django==3.1.2
