@@ -7,7 +7,7 @@ class Event(models.Model):
     name = models.CharField(max_length=64)
     when = models.DateTimeField(blank=True, null=True)
     location = models.CharField(max_length=64)
-    age_min = models.IntegerField(blank=True)
+    age_min = models.IntegerField(blank=True, null=True)
     primary_contact = models.ForeignKey
 
     def __str__(self):

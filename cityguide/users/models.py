@@ -21,10 +21,10 @@ class UserProfile(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     birthday = models.DateField(blank=True, null=True)
     location = models.CharField(max_length=64)
-    discretionary_income = models.IntegerField()
-    miles_willing_to_travel = models.IntegerField()
+    discretionary_income = models.IntegerField(blank=True, null=True)
+    miles_willing_to_travel = models.IntegerField(default=2)
     # mobility
-    group_person_count = models.IntegerField()
+    group_person_count = models.IntegerField(blank=True, null=True)
     interests = models.ManyToManyField(Interest)
     user = models.OneToOneField(
         User,
