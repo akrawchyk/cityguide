@@ -16,6 +16,10 @@
             "hash": "sha256:d8b24664561d0d34ddfaec54636d502d7cea6e29c3eaf68f3df6180863e2166e",
             "version": "==1.4.3"
         },
+        "defusedxml": {
+            "hash": "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
+            "version": "==0.5.0"
+        },
         "dj-database-url": {
             "hash": "sha256:e16d94c382ea0564c48038fa7fe8d9c890ef1ab1a8ec4cb48e732c124b9482fd",
             "version": "==0.4.2"
@@ -57,11 +61,11 @@
             "version": "==16.8"
         },
         "pillow": {
-            "hash": "sha256:90b3ea7f8500351b0112f7c72f988e19cbb176250ed387cfd523f9f14e51f98d",
+            "hash": "sha256:d7104fb7fd502ed481fc54ae761d4d9840d83142a5295d722db43c31ac44ccea",
             "version": "==4.1.0"
         },
         "psycopg2": {
-            "hash": "sha256:0c68fb507415ce022402244cffe740018c9506367fe2d6323f0b47e2544b6b36",
+            "hash": "sha256:74ee532d6068a1456d5eda254513656c716cdee0a7389c91c094c7ce3500a9c9",
             "version": "==2.7.1"
         },
         "py": {
@@ -84,9 +88,9 @@
             "hash": "sha256:99834c9ff7ce5c5b2f4a18bc0880753e54ea3aaabc3cfb16961a92d5046665df",
             "version": "==3.0"
         },
-        "python-openid": {
-            "hash": "sha256:92c51c3ecec846cbec4aeff11f9ff47303d4a63f93b0e6ac0ec02a091fed70ef",
-            "version": "==2.2.5"
+        "python3-openid": {
+            "hash": "sha256:0086da6b6ef3161cfe50fb1ee5cceaf2cda1700019fda03c2c5c440ca6abe4fa",
+            "version": "==3.1.0"
         },
         "pytz": {
             "hash": "sha256:d1d6729c85acea5423671382868627129432fba9a89ecbb248d8d1c7a9f01c67",

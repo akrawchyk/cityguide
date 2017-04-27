@@ -52,5 +52,5 @@ venv/
 ENV/
 
 # compiled static files
-ancillary/static/*.css
-ancillary/static/*.js
+cityguide/static/*.css
+cityguide/static/*.js
