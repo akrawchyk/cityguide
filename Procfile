@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT cityguide.cityguide.wsgi:application
+web: waitress-serve --port=$PORT cityguide.wsgi:application
