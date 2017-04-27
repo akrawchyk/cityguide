@@ -1,0 +1,20 @@
+@import "normalize-opentype.css/normalize-opentype.css";
+@import "suitcss";
+@import "components/theme";
+@import "components/theme-map";
+@import "components/buttons";
+@import "components/messages";
+@import "components/header";
+@import "components/footer";
+
+html {
+    line-height: var(--line-height);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--color-black);
+}
+
+.Container {
+    max-width: 45em;
+    margin: 0 auto;
+}

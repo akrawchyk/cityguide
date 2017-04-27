@@ -1,0 +1,18 @@
+{% load account %}
+
+{% user_display user as user_display %}
+
+<header class="Header" role="banner">
+    <div class="u-flex">
+        <a href="/">Ancillary</a>
+        <nav class="u-flexExpandLeft">
+            {% if user.is_authenticated %}
+            <span>Welcome, {{ user_display }}</span>
+            <a href="{% url 'account_logout' %}">Sign Out</a>
+            {% else %}
+            <a class="Button" href="{% url 'account_signup' %}">Sign up</a>
+            <a class="Button Button--text" href="{% url 'account_login' %}">Sign in</a>
+            {% endif %}
+        </nav>
+    </div>
+</header>

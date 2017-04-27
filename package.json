@@ -1,0 +1,14 @@
+{
+  "name": "cityguide.io",
+  "description": "",
+  "dependencies": {
+    "normalize-opentype.css": "^0.2.4",
+    "suitcss": "^2.0.0",
+    "suitcss-preprocessor": "^3.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianGindi/cityguide-io.git"
+  }
+}

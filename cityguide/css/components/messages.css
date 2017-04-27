@@ -1,0 +1,30 @@
+.Messages {
+  background: var(--color-light-blue);
+}
+
+.Message {
+  font-weight: bold;
+  padding: var(--space-small-px);
+}
+
+.Message--debug {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+.Message--info {
+  background-color: var(--color-deep-blue);
+  color: var(--color-white);
+}
+
+.Message--success {
+  background-color: var(--color-light-green);
+}
+
+.Message--warning {
+  background-color: var(--color-light-yellow);
+}
+
+.Message--critical {
+  background-color: var(--color-light-red);
+}

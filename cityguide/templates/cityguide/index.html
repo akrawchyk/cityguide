@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head_title %}Home{% endblock %}
+
+{% block content %}
+
+<div class="Container">
+    <div class="Grid">
+        {% for content in feincms_page.content.main %}
+        <div class="Grid-cell">
+            {{ content.render }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="Container">
+    <div class="Grid">
+        {% for content in feincms_page.content.sidebar %}
+        <div class="Grid-cell">
+            {{ content.render }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

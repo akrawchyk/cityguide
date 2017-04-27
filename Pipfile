@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+[packages]
+django-allauth = "*"
+python-decouple = "*"
+whitenoise = "*"
+django-debug-toolbar = "*"
+dj-database-url = "*"
+psycopg2 = "*"
+django-mptt = "*"
+feedparser = "*"
+Django = "*"
+FeinCMS = "*"
+Pillow = "*"
+pytest-django = "*"
