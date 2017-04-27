@@ -8,7 +8,12 @@ class Interest(models.Model):
     name = models.CharField(max_length=64)
 
 
-class Profile(models.Model):
+class User(AbstractUser):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+
+class UserProfile(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     age = models.IntegerField()
@@ -18,13 +23,7 @@ class Profile(models.Model):
     # mobility
     group_person_count = models.IntegerField()
     interests = models.ManyToManyField(Interest)
-
-
-class User(AbstractUser):
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    profile = models.ForeignKey(
-        Profile,
-        on_delete=models.CASCADE,
-        null=True
+    user = models.OneToOneField(
+        User,
+        on_delete=models.CASCADE
     )
