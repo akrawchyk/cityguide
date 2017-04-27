@@ -24,7 +24,6 @@ class UserProfile(models.Model):
     discretionary_income = models.IntegerField(blank=True, null=True)
     miles_willing_to_travel = models.IntegerField(default=2)
     # mobility
-    group_person_count = models.IntegerField(blank=True, null=True)
     interests = models.ManyToManyField(Interest)
     user = models.OneToOneField(
         User,
