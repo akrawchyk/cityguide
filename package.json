@@ -1,6 +1,9 @@
 {
   "name": "cityguide.io",
   "description": "",
+  "scripts": {
+    "postinstall": "suitcss --minify cityguide/css/cityguide.css cityguide/static/cityguide.css"
+  },
   "dependencies": {
     "normalize-opentype.css": "^0.2.4",
     "suitcss": "^2.0.0",
