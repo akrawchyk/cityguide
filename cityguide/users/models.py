@@ -19,7 +19,7 @@ class User(AbstractUser):
 class UserProfile(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    birthday = models.DateField(blank=True)
+    birthday = models.DateField(blank=True, null=True)
     location = models.CharField(max_length=64)
     discretionary_income = models.IntegerField()
     miles_willing_to_travel = models.IntegerField()

@@ -5,7 +5,7 @@ class Event(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=64)
-    date = models.DateTimeField(blank=True)
+    when = models.DateTimeField(blank=True, null=True)
     location = models.CharField(max_length=64)
     age_min = models.IntegerField(blank=True)
     primary_contact = models.ForeignKey
