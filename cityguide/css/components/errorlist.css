@@ -1,0 +1,12 @@
+.errorlist {
+    background-color: var(--color-red);
+    font-weight: bold;
+    color: var(--color-white);
+    margin-bottom: var(--space-medium-px);;
+    padding: var(--space-small-px);
+    padding-bottom: 0;
+}
+
+.errorlist li {
+    padding-bottom: var(--space-small-px);
+}

@@ -1,5 +1,6 @@
 .Messages {
   background: var(--color-light-blue);
+  margin-bottom: var(--space-medium-px);
 }
 
 .Message {

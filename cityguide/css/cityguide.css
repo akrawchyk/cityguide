@@ -6,6 +6,7 @@
 @import "components/messages";
 @import "components/header";
 @import "components/footer";
+@import "components/errorlist";
 
 html {
     line-height: var(--line-height);
