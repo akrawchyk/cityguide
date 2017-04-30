@@ -1,16 +1,11 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import Interest, User, UserProfile
-
-
-class InterestAdmin(admin.ModelAdmin):
-    pass
+from .models import User, UserProfile
 
 
 class UserProfileAdmin(admin.ModelAdmin):
-    pass
+    filter_horizontal = ('interests', )
 
 
-admin.site.register(Interest, InterestAdmin)
 admin.site.register(UserProfile, UserProfileAdmin)
-admin.site.register(User, UserProfileAdmin)
+admin.site.register(User, UserAdmin)

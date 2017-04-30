@@ -11,7 +11,7 @@
 {% if confirmation %}
 
 {% with confirmation.email_address.email as email %}
-<p>Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is a valid e-mail address.</p>
+<p>Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is your e-mail address.</p>
 {% endwith %}
 
 <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
