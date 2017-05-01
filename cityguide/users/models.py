@@ -15,11 +15,12 @@ class UserProfile(models.Model):
     discretionary_income = models.IntegerField(blank=True, null=True)
     miles_willing_to_travel = models.IntegerField(default=2)
     # mobility
-    interests = models.ManyToManyField('interests.Interest',
-                                       related_name='user_interests')
-    user = models.OneToOneField(
-        User,
-        on_delete=models.CASCADE
+    interests = models.ManyToManyField(
+        'interests.Interest',
+        related_name='user_interests',
+    )
+    user = models.OneToOneField(User,
+        on_delete=models.CASCADE,
     )
 
     def __str__(self):
